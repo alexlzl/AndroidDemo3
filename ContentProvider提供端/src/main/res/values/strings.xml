@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HelloWorld</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+
+    <string-array name="main_lv_menu_strings">
+        <item>通讯录(手机数据库版)</item>
+    </string-array>
+
+    <string name="title_activity_contact">通讯录</string>
+    <string name="title_activity_mafds">Mafds</string>
+    <string name="title_activity_add_contact">AddContactActivity</string>
+
+</resources>

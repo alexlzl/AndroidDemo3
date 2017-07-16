@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:src="@drawable/login"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="top|center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_code"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/linear_44"
+            android:layout_marginLeft="@dimen/linear_44"
+            android:layout_marginRight="@dimen/linear_44"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@drawable/login_bg"
+            android:hint="请输入授权码登录"
+            android:paddingLeft="@dimen/margin_5" />
+
+        <Button
+            android:id="@+id/bt_login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/linear_44"
+            android:layout_marginLeft="@dimen/linear_44"
+            android:layout_marginRight="@dimen/linear_44"
+            android:layout_marginTop="@dimen/margin_40"
+            android:background="@drawable/login_button"
+            android:text="登录" />
+    </LinearLayout>
+</LinearLayout>

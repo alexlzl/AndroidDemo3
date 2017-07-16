@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="big_pic_array">
+        <item>@drawable/big_pic_1</item>
+        <item>@drawable/big_pic_2</item>
+        <item>@drawable/big_pic_3</item>
+        <item>@drawable/big_pic_4</item>
+    </array>
+    <array name="image_view_id_array">
+        <item>@id/iv1</item>
+        <item>@id/iv2</item>
+        <item>@id/iv3</item>
+        <item>@id/iv4</item>
+    </array>
+
+</resources>

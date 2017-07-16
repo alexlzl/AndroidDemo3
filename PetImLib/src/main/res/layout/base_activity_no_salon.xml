@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="173dp"
+        android:layout_height="141dp"
+        android:layout_marginTop="83dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/salon_empty" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="目前还没有沙龙活动!"
+        android:textColor="#7d7c7c"
+        android:textSize="17sp" />
+
+</LinearLayout>

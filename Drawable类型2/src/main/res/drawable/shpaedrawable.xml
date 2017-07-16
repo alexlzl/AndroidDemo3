@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--上面我们讲了Shape的子标签的的作用，但Shape本身还没讲，Shape自已是可以定义当前Shape的形状的，比如上面的矩形，还有椭圆形，线形和环形；这些都是通过Shape标签的 shape属性来定义的，Shape标签总共有下面几个属性，我们一个个讲：
+
+
+
+android:shape=["rectangle" | "oval" | "line" | "ring"]
+shape的形状，默认为矩形，可以设置为矩形（rectangle）、椭圆形(oval)、线性形状(line)、环形(ring)
+下面的属性只有在android:shape="ring时可用：
+android:innerRadius         尺寸，内环的半径。
+android:innerRadiusRatio    浮点型，以环的宽度比率来表示内环的半径，
+android:thickness           尺寸，环的厚度
+android:thicknessRatio      浮点型，以环的宽度比率来表示环的厚度，例如，如果android:thicknessRatio="2"，
+android:useLevel            boolean值，如果当做是LevelListDrawable使用时值为true，否则为false.
+android:shape=["rectangle" | "oval" | "line" | "ring"]
+shape的形状，默认为矩形，可以设置为矩形（rectangle）、椭圆形(oval)、线性形状(line)、环形(ring)
+下面的属性只有在android:shape="ring时可用：
+android:innerRadius         尺寸，内环的半径。
+android:innerRadiusRatio    浮点型，以环的宽度比率来表示内环的半径，
+android:thickness           尺寸，环的厚度
+android:thicknessRatio      浮点型，以环的宽度比率来表示环的厚度，例如，如果android:thicknessRatio="2"，
+android:useLevel            boolean值，如果当做是LevelListDrawable使用时值为true，否则为false.
+可见，只有第一个shape是可用的，其它五个都是shape等于ring时所特有的。
+
+
+
+注意，无论这里shape取什么形状，他的子标签都是可用的，但有时并不会有效果，比如在shape为椭圆时，那corners标签就不会有效果，很显然的道理。下面一个个看看各个形状都是怎么样的；-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <stroke
+        android:width="20dp"
+        android:color="#00ff00"
+        android:dashWidth="10dp"
+        android:dashGap="1dp" />
+</shape>

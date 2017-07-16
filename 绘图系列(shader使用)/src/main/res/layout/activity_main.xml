@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fingertip.creditease.com.myapplication.MainActivity">
+
+    <TextView
+        android:id="@+id/one"
+        android:onClick="testBitmapShader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BitmapShader" />
+    <TextView
+        android:id="@+id/two"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/one"
+        android:onClick="testLinearGradient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LinearGradient" />
+    <TextView
+        android:id="@+id/three"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/two"
+        android:onClick="testRadialGradient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RadialGradient" />
+    <TextView
+        android:id="@+id/four"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/three"
+        android:onClick="testSweepGradient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SweepGradient" />
+    <TextView
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/four"
+        android:onClick="testComposeShader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ComposeShader" />
+</android.support.constraint.ConstraintLayout>

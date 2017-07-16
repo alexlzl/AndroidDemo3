@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">DefineView</string>
+    <string name="item_scroll_method">ScrollTo和ScrollBy方法</string>
+    <string name="item_scroll_layout">带弹性的Layout</string>
+    <string name="item_scroll_pager">翻页子View的Layout</string>
+</resources>

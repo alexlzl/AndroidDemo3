@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_d6">#d6d6d6</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="sf_vi_gray_64">#646464</color>
+    <color name="sf_vi_gray_96">#969696</color>
+    <color name="ms_3dd8c1">#3dd8c1</color>
+    <color name="title_bg">#af2942</color>
+     <color name="color_7d7c7c">#7d7c7c</color>
+     <color name="color_999999">#999999</color>
+     <color name="reveal_color">#1b000000</color>
+     <color name="red_text_color">#af2942</color>
+     <color name="color_ffd946">#ffd946</color>
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/no_order_iv"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="120dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/address_empty" />
+
+    <TextView
+        android:id="@+id/base_activity_no_address_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:text="您还没有填写地址呢!"
+        android:textColor="#7d7c7c"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/base_activity_no_address_add"
+        android:layout_marginTop="25dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"
+        android:textColor="@color/white"
+        android:background="@drawable/bt_bg_yellow"
+        android:text="立即添加"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

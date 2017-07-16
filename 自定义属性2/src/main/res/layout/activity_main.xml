@@ -1,0 +1,15 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ad="http://schemas.android.com/apk/res/com.angeldevil.customstyle"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <com.angeldevil.customstyle.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ad:attr_one="attr one in xml"
+        style="@style/ThroughStyle"
+        android:text="@string/hello_world" />
+
+</RelativeLayout>

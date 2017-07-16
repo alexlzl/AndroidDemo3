@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- 插入标题栏布局 -->
+
+        <include layout="@layout/base_activity_titles" />
+        <!-- 内容显示区域 -->
+</LinearLayout>
+<!--
+        <LinearLayout
+            android:id="@+id/base_activity_rootview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" />
+
+        &lt;!&ndash; 加载失败视图 &ndash;&gt;
+
+        <include
+            android:id="@+id/base_activity_loadfail"
+            layout="@layout/base_activity_load_fail"
+            android:visibility="gone" />
+
+        &lt;!&ndash; 空数据视图 &ndash;&gt;
+
+        <include
+            android:id="@+id/base_activity_no_data"
+            layout="@layout/base_activity_no_data"
+            android:visibility="gone" />
+
+        &lt;!&ndash; 网络异常 &ndash;&gt;
+
+        <include
+            android:id="@+id/base_activity_no_network"
+            layout="@layout/base_activity_no_network"
+            android:visibility="gone" />
+        &lt;!&ndash; 搜索空页面 &ndash;&gt;
+
+        <include
+            android:id="@+id/base_activity_search_nodata"
+            layout="@layout/search_no_data"
+            android:visibility="gone" />
+        &lt;!&ndash; 地址空白页面 &ndash;&gt;
+
+        <include
+            android:id="@+id/base_activity_address_nodata"
+            layout="@layout/base_activity_no_address"
+            android:visibility="gone" />
+
+        &lt;!&ndash; 拼单空白页面 &ndash;&gt;
+
+        <include
+            android:id="@+id/base_activity_group_buy_nodata"
+            layout="@layout/base_activity_group_buy_empty"
+            android:visibility="gone" />
+        &lt;!&ndash; 沙龙空页面 &ndash;&gt;
+
+        <include
+            android:id="@+id/base_activity_no_salon"
+            layout="@layout/base_activity_no_salon"
+            android:visibility="gone" />
+        &lt;!&ndash; 我的沙龙空白页面 &ndash;&gt;
+
+        <include
+            android:id="@+id/base_activity_no_salon_my"
+            layout="@layout/base_activity_no_salon_my"
+            android:visibility="gone" />
+        &lt;!&ndash; 终端空白页面 &ndash;&gt;
+
+        <include
+            android:id="@+id/base_activity_no_client"
+            layout="@layout/base_activity_no_client"
+            android:visibility="gone" />
+        &lt;!&ndash; 名片空白页面 &ndash;&gt;
+
+        <include
+            android:id="@+id/base_activity_no_businesscard"
+            layout="@layout/base_activity_no_businesscard"
+            android:visibility="gone" />
+        &lt;!&ndash; 酒水需求空白页面 &ndash;&gt;
+
+        <include
+            android:id="@+id/base_activity_no_drink_demand"
+            layout="@layout/base_activity_no_drink_demand"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/base_menu"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="50dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/linear_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:elevation="6dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/menu_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:onClick="UserCenterClick"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:onClick="UserCenterClick"
+                    android:src="@drawable/heart_main" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/main_line" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="ShoppingClick"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/base_shopping_mian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:onClick="ShoppingClick"
+                    android:src="@drawable/shopping_main" />
+
+                <TextView
+                    android:id="@+id/menu_shoppingNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/base_shopping_mian"
+                    android:background="@drawable/msg_bg"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="8dp"
+                    android:visibility="invisible" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/main_line" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="ShareApp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/imageView"
+                    android:layout_toRightOf="@+id/imageView"
+                    android:clickable="true"
+                    android:onClick="ShareApp"
+                    android:src="@drawable/share_main" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/main_line" />
+
+            <ImageView
+                android:id="@+id/back_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_order"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="BackClick"
+                android:src="@drawable/hidden_main_menu" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/button_hidded_linear"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:elevation="6dp"
+            android:onClick="MeunClick">
+
+            <ImageView
+                android:id="@+id/button_hidded"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/main_menu"
+                android:onClick="MeunClick"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/base_tal_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/sf_margin_10"
+            android:clickable="true"
+            android:elevation="6dp"
+            android:gravity="center"
+            android:onClick="TelClick"
+            android:src="@drawable/main_tel"
+            android:textColor="@color/color_999999" />
+    </RelativeLayout>-->
+</FrameLayout>

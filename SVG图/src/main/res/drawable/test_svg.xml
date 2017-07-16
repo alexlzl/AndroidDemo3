@@ -1,0 +1,13 @@
+<!--vector是VectorDrawable对应的根标签
+android:width与android:height对应矢量图的实际大小(矢量图是可以无限大, 但通常情况下一个图片都应该有一个原始大小, 假如你将此VectorDrawable作为一个ImageView的src, ImageView的大小都设置为wrap_content, 则ImageView对应的实际大小就是这里设置的大小)
+android:viewportWidth与android:viewportHeight是指当前Drawable对应的虚拟Canvas的大小, 之所以说是虚拟的是因为实际上并不存在这样一个Canvas, 又之所以需要这个值是因为在<path/>标签中的路径数据要基于具体的坐标系来绘制.
+<path/>标签对应路径信息, 这里的path与我们自定义绘制图形时用的Path原理一样, 就是记录一些绘图操作, 具体对应其中的pathData.PathData中对应的路径描述符号不需要我们去记, 通常情况下由绘图软件生成svg图片再从svg文件中提取.-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportHeight="24.0"
+    android:viewportWidth="24.0">
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M12,2C6.48,2 2,6.48 2,12s4.48,10 10,10 10,-4.48 10,-10S17.52,2 12,2zM10,17l-5,-5 1.41,-1.41L10,14.17l7.59,-7.59L19,8l-9,9z" />
+</vector>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TestIntent</string>
+    <string name="test_intent">测试选择器</string>
+</resources>

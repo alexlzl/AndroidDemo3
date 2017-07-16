@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="71dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="119dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/client_empty" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="您还没添加终端呦!"
+        android:textColor="#7d7c7c"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/base_activity_no_client_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/bt_bg_yellow"
+        android:paddingBottom="10dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:paddingTop="10dp"
+        android:text="立即添加"
+        android:textColor="@color/white" />
+
+</LinearLayout>

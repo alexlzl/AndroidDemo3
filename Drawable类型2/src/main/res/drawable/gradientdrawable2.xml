@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:innerRadius="0dip"
+    android:shape="ring"
+
+    android:thickness="70dip"
+    android:useLevel="false">
+    <!--android:centerX与android:centerY
+
+    centerX、centerY两个属性用于设置渐变的中心点位置，仅当渐变类型为放射渐变时有效，类型为分数或小数，不接受Dimension。默认值是0.5，有效值是0.0~1.0，超出该范围后会看不出渐变效果。centerX、centerY的取值其实是宽和高的百分比；不难理解，下面看代码：
+
+    -->
+
+    <!--android:useLevel
+
+useLevel属性通常不使用。该属性用于指定是否将该shape当成一个LevelListDrawable来使用，默认值为false。-->
+    <gradient
+        android:centerColor="#00ff00"
+        android:centerX="0.3"
+        android:centerY="0.7"
+        android:endColor="#0000ff"
+        android:gradientRadius="70"
+        android:startColor="#ff0000"
+        android:type="radial"
+        android:useLevel="false" />
+
+</shape>

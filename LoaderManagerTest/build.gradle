@@ -1,0 +1,29 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 20
+    buildToolsVersion "25.0.0"
+
+    defaultConfig {
+        applicationId "com.example.loadermanagertest"
+        minSdkVersion 14
+        targetSdkVersion 20
+//
+//        testApplicationId "com.example.loadermanagertest"
+//        testInstrumentationRunner "android.test.InstrumentationTestRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    compileOptions {
+        encoding "UTF-8"
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:20.+'
+}

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.helloworld"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.READ_USER_DICTIONARY" />
+    <uses-permission android:name="android.permission.WRITE_USER_DICTIONARY" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.helloworld.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.helloworld.ContactActivity"
+            android:label="@string/title_activity_contact" >
+        </activity>
+        <activity
+            android:name="com.example.helloworld.Mafds"
+            android:label="@string/title_activity_mafds" >
+        </activity>
+        <activity
+            android:name="com.example.helloworld.AddContactActivity"
+            android:label="@string/title_activity_add_contact" >
+        </activity>
+<!--
+指定父 Content Provider 访问权限的哪些子集可被授权。 这些子集用 content: 的 path 部分进行标明。（URI 的 authority 部分标明了 Content Provider 。） 这种授权机制向 Content Provider 的客户端提供了一次性越权访问的途径，这里的客户端是指那些正常情况下无权访问该 Content Provider 中数据的客户端。
+如果 Content Provider 的 grantUriPermissions 属性值为“true”，则该 Provider 内所有的数据都能被授权访问。 可它如果设为“false”，则只有本元素指定的数据子集才能被授权。 一个 Provider 内可以包含任意数量的 <grant-uri-permission> 元素。 其中每一个只能指定一条路径（三种可能的属性之一）。
+
+关于如何授权的详细信息，请参阅 <intent-filter> 元素的 grantUriPermissions 属性。-->
+        <provider
+            android:exported="true"
+            android:name="com.example.provider.ContactProvider"
+            android:authorities="com.example.provider.ContactProvider" >
+        </provider>
+    </application>
+
+</manifest>

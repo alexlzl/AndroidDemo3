@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TestDrawable</string>
+    <!--支持的 HTML 元素包括：
+<b> 表示粗体文本。
+<i> 表示斜体文本。
+<u> 表示 下划线 文本。
+有时，您可能想让自己创建的带样式文本资源同时也用作格式字符串。 正常情况下，这是行不通的，因为 String.format(String, Object...) 方法会去除字符串中的所有样式信息。 这个问题的解决方法是编写带转义实体的 HTML 标记，在完成格式设置后，这些实体可通过 fromHtml(String) 恢复。 例如：-->
+    <string name="welcome_messages">Hello, %1$s! You have &lt;b>%2$d new messages&lt;/b>.</string>
+</resources>

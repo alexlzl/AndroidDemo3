@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dip"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="22MB Picture" />
+
+    <include
+        android:id="@+id/iv1"
+        layout="@layout/image_item" />
+
+    <include
+        android:id="@+id/iv2"
+        layout="@layout/image_item" />
+
+    <include
+        android:id="@+id/iv3"
+        layout="@layout/image_item" />
+
+    <include
+        android:id="@+id/iv4"
+        layout="@layout/image_item" />
+
+    <Button
+        android:id="@+id/load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="load" />
+
+    <Button
+        android:id="@+id/exact_load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="exact load" />
+
+</LinearLayout>

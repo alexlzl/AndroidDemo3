@@ -1,0 +1,253 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!-- Fragment容器 -->
+
+    <FrameLayout
+        android:id="@+id/fragment_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_activity_tab_parent"
+        android:background="@color/white" />
+    <!-- TAB容器 -->
+
+    <LinearLayout
+        android:id="@+id/main_activity_tab_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="52dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:baselineAligned="true"
+        android:orientation="horizontal"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp" >
+
+        <!-- 首页 -->
+
+   <!--     <com.heheys.ec.view.RippleView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >-->
+
+            <RelativeLayout
+                android:id="@+id/main_activity_tab_communicate"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:id="@+id/linear_im"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/main_activity_tab_home_iv"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/comniued" />
+
+                    <TextView
+                        android:id="@+id/main_activity_tab_home_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/tab_communite"
+                        android:textColor="@color/color_1AAD19"
+                        android:textSize="12sp" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/unreadAddressLable"
+                    android:text="1"
+                    android:textColor="@color/color_1AAD19"
+                    android:layout_toRightOf="@id/linear_im"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp" />
+            </RelativeLayout>
+       <!-- </com.heheys.ec.view.RippleView>-->
+        <!-- 购物车 -->
+        <!-- 订单 -->
+
+
+        <!--
+        <com.heheys.ec.view.RippleView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:layout_weight="1" >
+
+            <RelativeLayout
+                android:id="@+id/main_activity_tab_order"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/main_activity_tab_order_iv"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/tab_order_not_focus" />
+
+                    <TextView
+                        android:id="@+id/main_activity_tab_order_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="订单"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </com.heheys.ec.view.RippleView>
+        -->
+
+
+        <!-- 发现 -->
+
+        <!--<com.heheys.ec.view.RippleView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >-->
+
+            <RelativeLayout
+                android:id="@+id/main_activity_tab_achievement"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/main_activity_tab_find_iv"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/medal" />
+
+                    <TextView
+                        android:id="@+id/main_activity_tab_find_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/tab_achievement"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </RelativeLayout>
+       <!-- </com.heheys.ec.view.RippleView>-->
+        <!-- 我的 -->
+
+    <!--    <com.heheys.ec.view.RippleView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+-->
+            <RelativeLayout
+                android:id="@+id/main_activity_tab_shopping_cart"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/main_activity_tab_shopcart_iv"
+                        android:layout_width="27dp"
+                        android:layout_height="27dp"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/my" />
+
+                    <TextView
+                        android:id="@+id/main_activity_tab_shopcart_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="购物车"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/main_activity_product_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginTop="2dp"
+                    android:padding="1dp"
+                    android:background="@drawable/message_num_bg"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:text=""
+                    android:visibility="invisible" />
+            </RelativeLayout>
+<!--        </com.heheys.ec.view.RippleView>-->
+
+      <!--  <com.heheys.ec.view.RippleView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >-->
+
+            <RelativeLayout
+                android:id="@+id/main_activity_tab_my"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/main_activity_tab_my_iv"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/my" />
+
+                    <TextView
+                        android:id="@+id/main_activity_tab_my_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/tab_my"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </RelativeLayout>
+  <!--      </com.heheys.ec.view.RippleView>-->
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_above="@id/main_activity_tab_parent"
+        android:background="@color/color_cccccc" >
+    </View>
+
+</RelativeLayout>

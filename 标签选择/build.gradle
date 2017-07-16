@@ -1,0 +1,39 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "25.0.0"
+
+    defaultConfig {
+        applicationId "com.nshmura.recyclertablayout.demo"
+        minSdkVersion 14
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+    }
+
+    def signingConfigsFile = file("signingConfigs.release.gradle")
+    if (signingConfigsFile.exists()) {
+        apply from: signingConfigsFile.absolutePath, to: android
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            zipAlignEnabled true
+        }
+        release {
+            debuggable false
+            zipAlignEnabled true
+            if (signingConfigsFile.exists()) {
+                signingConfig signingConfigs.release
+            }
+        }
+    }
+}
+
+dependencies {
+    compile project(':标签选择library')
+    //compile "com.nshmura:recyclertablayout:$VERSION_NAME"
+    compile "com.android.support:appcompat-v7:24.2.1"
+}

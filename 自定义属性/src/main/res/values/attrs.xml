@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--设置 5 个属性的原因是 Android 的 View 属性覆盖的优先级有 5 处，分别是：
+
+    布局文件中的直接指定的属性
+    布局文件中的 style 中指定的属性
+    我们自己定义的 Style
+    Theme 中直接指定的 Style 引用
+    Theme 中直接指定的属性
+    他们之间的覆盖的优先级是：
+
+    1 > 2 > 3 / 4 > 5-->
+    <declare-styleable name="AttrTestTextView">
+        <attr name="firstAttr" format="string" />
+        <attr name="secondAttr" format="string" />
+        <attr name="thirdAttr" format="string" />
+        <attr name="fourthAttr" format="string" />
+        <attr name="fifthAttr" format="string" />
+        <attr name="defaultStyleAttr" format="reference" />
+    </declare-styleable>
+
+    <!--<attr name="defaultStyleAttr" format="reference" />-->
+</resources>

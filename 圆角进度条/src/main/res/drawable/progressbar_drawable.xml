@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@android:id/background">
+        <shape>
+            <corners 
+                android:topLeftRadius="15dp"
+                android:topRightRadius="15dp"
+                android:bottomLeftRadius="15dp"
+                android:bottomRightRadius="15dp"
+                />
+            <solid android:color="#bfbfbf" />
+        </shape>
+    </item>
+    
+    <item
+        android:id="@android:id/progress"
+        android:drawable="@drawable/good_pb_t"
+        >
+
+        <!--<scale android:scaleWidth="100%"-->
+            <!--android:drawable="@drawable/progress_bar_c"   />-->
+    </item>
+    <!--<item android:id="@android:id/progress">-->
+        <!--&lt;!&ndash;-->
+         <!--<clip>-->
+         <!--<shape>-->
+               <!--<corners android:topRightRadius="20dp"-->
+                    <!--android:bottomRightRadius="20dp"/>-->
+               <!--<solid android:color="#FF009898"/>-->
+        <!--</shape>-->
+        <!--</clip>-->
+       <!--&ndash;&gt;-->
+        <!--<scale android:scaleWidth="100%"-->
+            <!--android:drawable="@drawable/progress_bar_c"   />-->
+    <!--</item>-->
+</layer-list>

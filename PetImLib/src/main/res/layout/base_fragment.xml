@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/base_fragment_rootview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <!-- 插入标题栏布局 -->
+
+    <include layout="@layout/base_activity_titles" />
+    <!-- 购物车空页面 -->
+
+    <include
+        android:id="@+id/base_fragment_shopcart_nodata"
+        layout="@layout/base_activity_no_shopcart"
+        android:visibility="gone" />
+    <!-- 地址页面空页面 -->
+
+    <include
+        android:id="@+id/base_fragment_address_nodata"
+        layout="@layout/base_activity_no_address"
+        android:visibility="gone" />
+    <!-- 加载失败视图 -->
+ <include
+        android:id="@+id/base_activity_no_salon"
+        layout="@layout/base_activity_no_salon"
+        android:visibility="gone" />
+    <!-- 我的沙龙空白页面 -->
+    <include
+        android:id="@+id/base_activity_loadfail"
+        layout="@layout/base_activity_load_fail"
+        android:visibility="gone" />
+
+    <!-- 空数据视图 -->
+
+    <include
+        android:id="@+id/base_activity_no_data"
+        layout="@layout/base_activity_no_data"
+        android:visibility="gone" />
+
+    <!-- 网络异常 -->
+
+    <include
+        android:id="@+id/base_activity_no_network"
+        layout="@layout/base_activity_no_network"
+        android:visibility="gone" />
+    <!-- 搜索空页面 -->
+
+    <include
+        android:id="@+id/base_activity_search_nodata"
+        layout="@layout/search_no_data"
+        android:visibility="gone" />
+    <!-- 订单空页面 -->
+
+    <include
+        android:id="@+id/base_fragment_no_order"
+        layout="@layout/base_activity_no_order"
+        android:visibility="gone" />
+
+</LinearLayout>

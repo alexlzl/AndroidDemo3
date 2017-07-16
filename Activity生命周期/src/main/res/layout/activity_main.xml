@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.lzl.testfragment.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/colorAccent"
+        android:onClick="testOnClick"
+        android:text="dialog!" />
+
+    <TextView
+        android:id="@+id/dialog_activity"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/colorPrimary"
+        android:onClick="dialogActivity"
+        android:text="对话框activity!" />
+
+    <TextView
+        android:id="@+id/popup_window"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/colorAccent"
+        android:onClick="testPopupWindow"
+        android:text="popup_window!" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/colorPrimary"
+        android:onClick="testToast"
+        android:text="toast!" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/colorAccent"
+        android:onClick="secondActivity"
+        android:text="second_activity" />
+
+    <EditText
+        android:id="@+id/activity_main_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入" />
+
+    <com.example.lzl.testfragment.CustomViewGroup
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/colorPrimary">
+
+        <com.example.lzl.testfragment.CustomTextview
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/colorAccent"></com.example.lzl.testfragment.CustomTextview>
+
+    </com.example.lzl.testfragment.CustomViewGroup>
+</LinearLayout>

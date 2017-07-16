@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/button1"
+        android:onClick="queryall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查询所有联系人" />
+
+    <Button
+        android:id="@+id/button2"
+        android:onClick="query"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查询用户名为123的联系人" />
+
+    <Button
+        android:id="@+id/button3"
+        android:onClick="insert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="插入一个联系人" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="删除一个联系人" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="修改一个联系人" />
+
+</LinearLayout>

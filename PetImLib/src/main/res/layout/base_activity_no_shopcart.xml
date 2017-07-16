@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:id="@+id/base_activity_no_shopcart_parent" >
+
+    <ImageView
+        android:id="@+id/no_order_iv"
+        android:layout_width="78dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="115dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/shoppingcart_empty" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:text="购物车是空的"
+        android:textColor="#7d7c7c"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/base_activity_no_shopcart_buy"
+        android:layout_marginTop="35dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"
+        android:textColor="@color/white"
+        android:background="@drawable/bt_bg_yellow"
+        android:text="去逛逛"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

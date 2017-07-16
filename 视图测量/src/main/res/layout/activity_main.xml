@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="fingertip.creditease.com.myapplication.MainActivity">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test" />
+
+    <fingertip.creditease.com.myapplication.CustomViewGroup
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:orientation="vertical"
+        android:id="@+id/parent">
+
+        <fingertip.creditease.com.myapplication.CustomView
+            android:background="@mipmap/ic_launcher"
+            android:id="@+id/customv"
+            android:layout_width="100px"
+            android:layout_height="100px" />
+        <fingertip.creditease.com.myapplication.CustomView2
+            android:background="@mipmap/ic_launcher"
+            android:id="@+id/customv2"
+            android:layout_width="100px"
+            android:layout_height="100px" />
+        <!--<TextView-->
+            <!--android:background="@color/colorPrimary"-->
+            <!--android:id="@+id/tv_p"-->
+            <!--android:text="testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest"-->
+            <!--android:layout_width="100px"-->
+            <!--android:layout_height="100px" />-->
+
+    </fingertip.creditease.com.myapplication.CustomViewGroup>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="400px"
+            android:layout_height="400px"
+            android:src="@mipmap/ic_launcher" />
+        <TextView
+            android:layout_below="@id/image"
+            android:text="testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</LinearLayout>

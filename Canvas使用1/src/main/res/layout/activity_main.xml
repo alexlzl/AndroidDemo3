@@ -1,0 +1,99 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnDrawAxis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="绘制坐标系"
+        android:onClick="onClick" />
+
+    <Button
+        android:id="@+id/btnDrawARGB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="drawARGB"
+        android:onClick="onClick"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnDrawText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="drawText"
+        android:onClick="onClick"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnDrawPoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="drawPoint"
+        android:onClick="onClick"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnDrawLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="drawLine"
+        android:onClick="onClick"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnDrawRect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="drawRect"
+        android:onClick="onClick"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnDrawCircle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="drawCircle"
+        android:onClick="onClick"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnDrawOval"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="drawOval"
+        android:onClick="onClick"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnDrawArc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="drawArc"
+        android:onClick="onClick"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnDrawPath"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="drawPath"
+        android:onClick="onClick"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnDrawBitmap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="drawBitmap"
+        android:onClick="onClick"
+        android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>

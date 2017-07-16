@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/startService"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Service" 
+        />
+    
+    <Button 
+        android:id="@+id/bindService"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Bind Service"
+        />
+    
+    <Button 
+        android:id="@+id/unbindService"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Unbind Service"
+        />
+    
+    <Button 
+        android:id="@+id/stopService"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop Service"
+        />
+    
+    <Button 
+        android:id="@+id/sendBinder"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Binder Data"
+        />
+    
+    <Button 
+        android:id="@+id/sendBroadcast"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Broadcast Data"
+        />
+    
+</LinearLayout>

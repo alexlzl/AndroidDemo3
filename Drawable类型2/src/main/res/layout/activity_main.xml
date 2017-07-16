@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fingertip.creditease.com.myapplication.MainActivity">
+    <!-- ColorDrawable 是最简单的Drawable，它实际上是代表了单色可绘制区域，它包装了一种固定的颜色，当ColorDrawable被绘制到画布的时候会使用颜色填充Paint，在画布上绘制一块单色的区域。-->
+    <Button
+        android:id="@+id/colordrawable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/colordrawable"
+        android:text="ColorDrawable"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp" />
+    <!--  GradientDrawable 表示一个渐变区域，可以实现线性渐变、发散渐变和平铺渐变效果，在Android中可以使用GradientDrawable表示很多复杂而又绚丽的界面效果。-->
+    <Button
+        android:padding="10dp"
+        android:background="@drawable/gradientdrawable"
+        android:id="@+id/GradientDrawable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="线性渐变"
+        app:layout_constraintTop_toBottomOf="@+id/colordrawable"
+        tools:layout_editor_absoluteX="0dp" />
+    <Button
+        android:background="@drawable/gradientdrawable1"
+        android:id="@+id/GradientDrawable1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="扫描渐变"
+        app:layout_constraintTop_toBottomOf="@+id/GradientDrawable"
+        tools:layout_editor_absoluteX="0dp" />
+    <Button
+        android:background="@drawable/gradientdrawable2"
+        android:id="@+id/GradientDrawable2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="放射渐变"
+        app:layout_constraintTop_toBottomOf="@+id/GradientDrawable1"
+        tools:layout_editor_absoluteX="0dp" />
+    <Button
+        android:background="@drawable/shpaedrawable"
+        android:id="@+id/shapedrawable1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="shapedrawable"
+        app:layout_constraintTop_toBottomOf="@+id/GradientDrawable2"
+        tools:layout_editor_absoluteX="0dp" />
+    <Button
+        android:background="@drawable/shapedrawable2"
+        android:id="@+id/shapedrawable2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="环形图片"
+        app:layout_constraintTop_toBottomOf="@+id/shapedrawable1"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:background="@drawable/bitmapdrawable"
+        android:id="@+id/bitmapdrawable"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:text="bitmapdrawable"
+        app:layout_constraintTop_toBottomOf="@+id/shapedrawable2"
+        tools:layout_editor_absoluteX="8dp" />
+
+</android.support.constraint.ConstraintLayout>

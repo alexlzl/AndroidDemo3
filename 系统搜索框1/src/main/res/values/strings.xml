@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">searchDialogTest</string>
+    <string name="hello_world">Hello world!</string>
+
+        <!-- Search failure message. -->
+    <string name="no_results">No results found for \"%s\"</string>
+    <string name="search_label">search_label</string>
+    <string name="search_hint">search_hint</string>
+    <string name="search">search</string>
+    
+</resources>

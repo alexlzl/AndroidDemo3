@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AndroidLessonSamples</string>
+    <string name="title_activity_background_padding">BackgroundPaddingActivity</string>
+</resources>

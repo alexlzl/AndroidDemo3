@@ -1,0 +1,32 @@
+<resources>
+    
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="firstAttr">firstAttr from theme attr</item>
+        <item name="secondAttr">secondAttr from theme attr</item>
+        <item name="thirdAttr">thirdAttr from theme attr</item>
+        <item name="fourthAttr">fourthAttr from theme attr</item>
+        <item name="fifthAttr">fifthAttr from theme attr</item>
+
+        <item name="defaultStyleAttr">@style/DefaultStyleInAppTheme</item>
+    </style>
+
+    <style name="DefaultStyleInAppTheme">
+        <item name="firstAttr">firstAttr from theme style</item>
+        <item name="secondAttr">secondAttr from theme style</item>
+        <item name="thirdAttr">thirdAttr from theme style</item>
+    </style>
+
+    <style name="DefaultStyleRes">
+        <item name="firstAttr">firstAttr from style res</item>
+        <item name="secondAttr">secondAttr from style res</item>
+        <item name="thirdAttr">thirdAttr from style res</item>
+        <item name="fourthAttr">fourthAttr from style res</item>
+    </style>
+
+    <style name="LayoutStyle">
+        <item name="firstAttr">firstAttr from layout style</item>
+        <item name="secondAttr">secondAttr from layout style</item>
+    </style>
+
+
+</resources>

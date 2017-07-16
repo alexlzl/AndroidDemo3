@@ -1,0 +1,15 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('lib_claim-1.0.0.aar'))
+//apply plugin: 'com.android.library'
+
+//android {
+//    compileSdkVersion 24
+//    buildToolsVersion "24.0.3"
+//
+//
+//}
+
+//dependencies {
+//
+//    compile 'com.android.support:appcompat-v7:24.2.1'
+//}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="center_horizontal">
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="102dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/submit_order_fail" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:text="亲,您下手慢了点,活动已结束~~"
+        android:textColor="#7d7c7c"
+        android:textSize="17sp" />
+
+</LinearLayout>
